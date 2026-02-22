@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application Tracker</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <header class="w-[80%] mx-auto">
+        <h1 class="text-[#002C5C] font-bold text-[30px] pb-[20px]">Job Application Tracker</h1>
+
+        <div class="grid grid-cols-3 gap-2">
+
+            <div class="bg-[#F1F2F4] rounded-md p-4 ">
+                <p class="font-medium text-[#323B49]">Total</p>
+                <p class="text-[#002C5C] font-medium" id="total">0</p>
+            </div>
+
+            <div class="bg-green-100 rounded-md p-4 ">
+                <p class="font-medium text-[#323B49]">Interview</p>
+                <p class="text-green-500 font-medium" id="interview">0</p>
+            </div>
+
+            <div class="bg-red-100 rounded-md p-4">
+                <p class="font-medium text-[#323B49]">Rejected</p>
+                <p class="text-red-500 font-medium" id="rejected">0</p>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="w-[80%] mx-auto pt-[60px]">
+        <div class="flex justify-between pb-6">
+        <div>
+            <h2 class="font-bold text-[#002C5C]">Available Jobs</h2>
+        </div>
+
+        <div class="flex items-center gap-2">
+            <p class="font-medium text-[#64748B]" id="job-count">0 </p>
+            <p class="font-medium text-[#64748B]">jobs</p>
+        </div>
+        </div>
+
+        <div>
+            <button class="text-white bg-[#3B82F6] font-medium px-8 py-2" id="all-filter-btn">All</button>
+            <button class="text-[#64748B] font-medium px-5 py-2" id="interview-filter-btn">Interview</button>
+            <button class="text-[#64748B] font-medium px-5 py-2" id="rejected-filter-btn">Rejected</button>
+        </div>
+    </main>
+</body>
+</html>
