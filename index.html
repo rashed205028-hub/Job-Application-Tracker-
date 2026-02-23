@@ -59,12 +59,12 @@
         </div>
 
         <div>
-            <button class="text-white bg-[#3B82F6] font-medium px-8 py-2" id="all-filter-btn">All</button>
-            <button class="text-[#64748B] font-medium px-5 py-2" id="interview-filter-btn">Interview</button>
-            <button class="text-[#64748B] font-medium px-5 py-2" id="rejected-filter-btn">Rejected</button>
+            <button onclick="toggleStyle('all-filter-btn')" class="text-white bg-[#3B82F6] font-medium px-8 py-2" id="all-filter-btn">All</button>
+            <button onclick="toggleStyle('interview-filter-btn')" class="text-[#64748B] font-medium px-5 py-2" id="interview-filter-btn">Interview</button>
+            <button onclick="toggleStyle('rejected-filter-btn')" class="text-[#64748B] font-medium px-5 py-2" id="rejected-filter-btn">Rejected</button>
         </div>
 
-        <section id="jobs">
+        <section id="allCards">
 
             <!-- Card-1 -->
 
@@ -74,7 +74,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</p>
+                        <p class="jobName" class=" font-semibold text-[18px] text-[#002C5C]">Mobile First Corp</p>
                         <p class="font-normal text-[#64748B]">React Native Developer</p>
 
                         
@@ -100,13 +100,13 @@
                 <!-- main part of the card-2 -->
 
                 <div>
-                    <button class="btn-delete pt-[34px]"><img src="./images/delete.png" alt=""></button>
+                    <button class="btn-delete pt-[34px] "><img src="./images/delete.png" alt=""></button>
                 </div>
 
             </div>
 
-        </section>
-        <section id="jobs">
+        
+        
 
             <!-- Card-2 -->
 
@@ -116,18 +116,18 @@
 
                 <div >
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">WebFlow Agency</p>
                         <p class="font-normal text-[#64748B]">Web Designer & Developer</p>
 
                         
                     </div>
 
                     <div>
-                        <p class="font-normal text-[14px] text-[#64748B] pb-5">Los Angeles, CA • Part-time • $80,000 - $120,000
+                        <p class="font-normal text-[14px] text-[#64748B] pb-5">Los Angeles, CA • Part-time • $80,000 - $120,000</p>
  
 
 
- </p>
+ 
 
                     </div>
 
@@ -151,8 +151,8 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
+        
+        
 
             <!-- Card-3 -->
 
@@ -162,7 +162,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">DataViz Solutions</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">DataViz Solutions</p>
                         <p class="font-normal text-[#64748B]">Data Visualization Specialist</p>
 
                         
@@ -196,8 +196,8 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
+        
+        
 
             <!-- Card-4 -->
 
@@ -207,7 +207,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">CloudFirst Inc</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">CloudFirst Inc</p>
                         <p class="font-normal text-[#64748B]">Backend Developer</p>
 
                         
@@ -238,8 +238,8 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
+        
+        
 
             <!-- Card-5 -->
 
@@ -249,7 +249,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">Innovation Labs</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">Innovation Labs</p>
                         <p class="font-normal text-[#64748B]">UI/UX Engineer</p>
 
                         
@@ -280,8 +280,7 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
+        
 
             <!-- Card-6 -->
 
@@ -291,7 +290,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">MegaCorp Solutions</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">MegaCorp Solutions</p>
                         <p class="font-normal text-[#64748B]">JavaScript Developer</p>
 
                         
@@ -322,8 +321,6 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
 
             <!-- Card-7 -->
 
@@ -333,7 +330,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">StartupXYZ</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">StartupXYZ</p>
                         <p class="font-normal text-[#64748B]">Full Stack Engineer</p>
 
                         
@@ -364,8 +361,6 @@
 
             </div>
 
-        </section>
-        <section id="jobs">
 
             <!-- Card-8 -->
 
@@ -375,7 +370,7 @@
 
                 <div class="">
                     <div class="pt-10 pb-5">
-                        <p class="font-semibold text-[18px] text-[#002C5C]">TechCorp Industries</p>
+                        <p class="jobName font-semibold text-[18px] text-[#002C5C]">TechCorp Industries</p>
                         <p class="font-normal text-[#64748B]">Senior Frontend Developer</p>
 
                         
@@ -406,7 +401,9 @@
 
             </div>
 
-        </section>
     </main>
+    <script src="script.js"></script>
 </body>
+
+
 </html>
